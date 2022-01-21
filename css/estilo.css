@@ -1,0 +1,260 @@
+*{
+    background:#E5E5E5 ;
+
+}
+
+#background1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+#background1 .vector_a{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.contenedora{
+    
+    
+    display: flex;
+    justify-content: space-between;  
+    width: 100%;
+    min-height: 600px;
+}
+#seccion1{
+   
+    align-items: baseline;
+    width: 100%;
+    
+}
+#seccion1 .div1 {
+    align-items:center;
+    width: 600px;
+    height: 567px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+#seccion1 .div1 .text1{
+    min-width: 300px;
+    max-height: 500px;
+    margin-top: 92px;
+    margin-left: 168px;
+    height: 500px;
+    border: 0px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+    color: #0A3871;
+    
+    
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(placeholder)
+}
+#contenedor{
+    display: inline-block;
+    min-width: 100px;
+  }
+  
+  #texto{
+    /*background-color: red;*/
+    width: 500px;
+   
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    overflow: auto;
+    
+  }
+
+.advertencia {
+display: flex;
+align-items: center;
+margin-left: 168px;
+padding: 8px;
+gap: 8px;
+}
+
+#seccion1 .div2{
+    display: flex;
+    justify-content: end; /*alinea horizontalmente*/
+    align-items: center;  /*alinea verticalmente*/
+    gap: 10px;
+
+
+}
+
+#seccion1 .div2 .boton1{
+    
+   
+    padding: 24px;
+
+    position: static ;
+    width: 248px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+   
+    
+    cursor: pointer;
+    color: white;
+    border: 0px;
+     font-family: Inter, sans-serif;
+     font-weight: bold;
+}
+#seccion1 .div2 .boton2{
+    
+     
+     padding: 24px;
+ 
+     position: static;
+     width: 248px;
+     height: 67px;
+     left: 352px;
+     top: 0px;
+       
+     background: #E5E5E5;
+     border: 1px solid #0A3871;
+     box-sizing: border-box;
+     border-radius: 24px;
+ 
+     flex: none;
+     order: 0;
+     flex-grow: 0;
+     
+
+     cursor: pointer;
+     font-family: Inter, sans-serif;
+     font-weight: bold;
+    
+     color: #0A3871;
+
+}
+
+
+#seccion2{
+ 
+    width: min-content;
+    display: flex;
+    justify-content: right;
+    
+}
+
+#seccion2 .div1{
+   
+    width: 300px;
+    height: 700px;
+    background: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#seccion2 .div1 .imagenMunieco{
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    margin-top: 50px;
+    background-image: url('../images/Muñeco.png');
+    background-size: cover;
+    background-position:center ;
+    
+    position: relative;
+    overflow:hidden ;
+
+}
+.imagenMunieco:hover::after{
+    transform: translateY(0);
+
+}
+.imagenMunieco::after{
+    content: "Ningún mensaje fue encontrado";
+    font-family: Inter;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: whi;
+    background-color: #16456198;
+    position: absolute;
+    inset:0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+    opacity: 80%;
+}
+/* #seccion2 .div1 .imagenMunieco .munieco{
+    background: white;
+    width: 300px;
+    height: 300px;
+} */
+
+#seccion2 .div1 .label2{
+   align-content: center;
+   margin-left: center;
+   background: white;
+   text-align: center;
+
+   font-family: Inter;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 120%;
+
+}
+#seccion2 .div1 .label3{
+    align-content: center;
+    margin-left: center;
+    background: white;
+    text-align: center;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+ }
+#seccion2 .div1 .div2{
+    background: white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#seccion2 .div2 .boton3{
+    margin-top: 55px;
+    width: 248px;
+    height: 67px;
+    border-radius: 15px;
+    background: #0A3871;
+    color: white;
+    font-family: inter;
+    font-weight: bold;
+}
+
